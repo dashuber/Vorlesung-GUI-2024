@@ -1,1 +1,31 @@
+# Gradle files
+.gradle/
+build/
+
+# When using the Gradle wrapper (recommended)
+gradlew
+gradlew.bat
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# Project files
+*.iml
+.idea/
+*.class
+
+# Log files
+*.log
+
+# Mac OS files
 .DS_Store
+
+# Windows files
+Thumbs.db
+
+# Linux files
+*~
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
