@@ -20,10 +20,6 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
-/**
- *
- * @author weigend
- */
 public class V2LayoutApplication extends Application {
 
     @Override
