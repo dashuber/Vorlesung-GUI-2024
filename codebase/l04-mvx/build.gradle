@@ -1,0 +1,24 @@
+plugins {
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'application'
+}
+
+group 'de.throsenheim.gui'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    implementation 'org.slf4j:slf4j-simple:2.0.0-alpha7'
+}
+
+javafx {
+    version = "21"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+mainClassName = 'v4.mvp.V4Mvp'
