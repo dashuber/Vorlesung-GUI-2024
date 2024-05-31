@@ -1,0 +1,3 @@
+rootProject.name = 'e09-architecture-starter'
+include 'locations-gui'
+
