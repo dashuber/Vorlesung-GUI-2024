@@ -1,0 +1,5 @@
+rootProject.name = 'e09-architecture'
+include 'locations-gui'
+include 'locations-business'
+include 'locations-dataaccess'
+
