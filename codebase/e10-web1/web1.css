@@ -1,0 +1,98 @@
+body {
+  padding: 20px;
+}
+
+#location-form {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  grid-gap: 0.2em;
+}
+
+#location-form label {
+  grid-column: 1/1;
+}
+
+#location-form > input[type=text] {
+  grid-column: span 2;
+}
+
+
+#location-form  input[type=checkbox] {
+  align-self: center;
+  grid-column: 2/3;
+}
+
+
+#location-form hr {
+  grid-column: span 3;
+  width: 100%;
+}
+
+.active-form {
+  grid-column: 2/4;
+}
+
+.street-form {
+  grid-column: 2 / 4;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 0.2em;
+}
+
+.city-form {
+  grid-column: 2 / 4;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 0.2em;
+}
+
+.button-container {
+  grid-column: 2 / 4;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 0.2em;
+}
+
+#save-button {
+  justify-self: end;
+}
+
+#notes-input {
+  height: 10em;
+  grid-column: span 2;
+}
+
+@media (max-width: 500px) {
+  #location-form {
+    grid-template-columns: auto;
+  }
+
+  #location-form > input[type=text] {
+    grid-column: span 1;
+  }
+
+  #location-form hr {
+    grid-column: span 1;
+  }
+
+  .active-form {
+    grid-column: 1 / 2;
+  }
+
+  .city-form {
+    grid-column: 1 / 2;
+  }
+
+  .street-form {
+    grid-column: 1 / 2;
+  }
+
+  .button-container {
+    grid-column: 1 / 2;
+  }
+
+  #notes-input {
+    grid-column: span 1;
+  }
+
+}

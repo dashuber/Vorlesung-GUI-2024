@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Übung 9 – Web GUIs Teil 1</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="./web1.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+</head>
+<body>
+    <h1>Location</h1>
+
+    <div id="location-form">
+        <label for="id-input">Id</label>
+        <input type="text" disabled="true" id="id-input">
+
+        <label for="name-input">Name</label>
+        <input type="text" id="name-input">
+
+
+        <hr>
+
+        <label for="label-input">Label</label>
+        <input type="text" id="label-input">
+
+        <label for="type-input">Type</label>
+        <select id="type-input"></select>
+
+
+        <label for="sub-type-input" >Sub type</label>
+        <select id="sub-type-input"></select>
+
+        <label for="since-input"  >Since</label>
+        <input type="date" id="since-input">
+
+        <div></div>
+
+        <div class="active-form">
+            <input type="checkbox" id="active-input">
+            <label for="active-input">active</label>
+        </div>
+
+        <hr>
+
+        <label>Address</label>
+        <div class="street-form">
+            <input type="text" id="street-input" placeholder="Street">
+            <input type="text" id="number-input" placeholder="Nr">
+        </div>
+
+        <div class="city-form">
+            <input type="text" id="zip-input" placeholder="zip">
+            <input type="text" id="city-input" placeholder="city">
+        </div>
+
+        <hr>
+        <label for="notes-input">Notes</label>
+        <textarea id="notes-input"></textarea>
+
+        <div class="button-container">
+            <button type="button" class="btn btn-sm" onclick="reset()">Reset</button>
+            <button type="button" class="btn btn-sm btn-primary" id="save-button">Save</button>
+            <button type="button" class="btn btn-sm">Cancel</button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById("save-button").addEventListener("click", () => {
+           alert("save");
+        });
+
+        function reset() {
+            alert("reset");
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
+</html>
